@@ -11,8 +11,15 @@ import Foundation
 class MockRecipeDataSource: RecipeDataSource {
     var url: URL?
     var mockRecipes: [Recipe] = []
+    var didCallFetchRecipes = false
+    var exceptionToThrow: Error?
     
     func fetchRecipes() async throws -> RecipeResponse {
+        if let exception = exceptionToThrow {
+            throw exception
+        }
+        
+        didCallFetchRecipes = true
         return RecipeResponse(recipes: mockRecipes)
     }
 }
