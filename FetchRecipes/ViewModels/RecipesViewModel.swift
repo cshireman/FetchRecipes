@@ -18,20 +18,23 @@ enum RecipesViewState {
 class RecipesViewModel: ObservableObject {
     @Published var recipes: [Recipe] = []
     @Published var state: RecipesViewState = .loading
+    @Published var error: Error?
     
     let repository: RecipeRepository
     
-    init(repository: RecipeRepository) {
+    init(repository: RecipeRepository = RecipeRepositoryImpl()) {
         self.repository = repository
     }
     
     func loadRecipes() async throws {
         state = .loading
+        
         do {
             recipes = try await repository.fetchRecipes()
             state = recipes.isEmpty ? .empty : .ready
         } catch {
             state = .error
+            self.error = error
         }
     }
 }

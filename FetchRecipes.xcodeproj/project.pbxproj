@@ -24,6 +24,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		83FDA20A2CB83EF000616B92 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		83FF2E2B2CB4A20700D632EC /* FetchRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83FF2E3B2CB4A20900D632EC /* FetchRecipesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchRecipesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -66,6 +67,7 @@
 		83FF2E222CB4A20700D632EC = {
 			isa = PBXGroup;
 			children = (
+				83FDA20A2CB83EF000616B92 /* README.md */,
 				83FF2E2D2CB4A20700D632EC /* FetchRecipes */,
 				83FF2E3E2CB4A20900D632EC /* FetchRecipesTests */,
 				83FF2E2C2CB4A20700D632EC /* Products */,
