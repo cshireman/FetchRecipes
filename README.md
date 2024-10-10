@@ -68,6 +68,6 @@ I used SwiftTesting for the first time in this application.  It seemed like a go
 
 I’ve included screenshots of the three main application states, see below.
 
-![Recipes](images/recipes.jpg)
-![Empty State](images/empty.jpg)
-![Error State](images/error.jpg)
+![Recipes](images/recipes.png)
+![Empty State](images/empty.png)
+![Error State](images/error.png)
